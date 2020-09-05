@@ -19,11 +19,6 @@ function Calculator() {
     event.preventDefault();
   }
 
-  function handleClickEqualButton() {
-    const result = calculateTheResult(screen);
-    setScreen(result);
-  }
-
   function handleClickClearButton() {
     setScreen('');
   }
@@ -65,6 +60,11 @@ function Calculator() {
     }
 
     return result.toString();
+  }
+  
+  function handleClickEqualButton() {
+    const result = calculateTheResult(screen);
+    setScreen(result);
   }
 
   return(
